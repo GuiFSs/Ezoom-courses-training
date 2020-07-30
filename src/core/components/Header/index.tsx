@@ -22,8 +22,8 @@ const Header: React.FC<IProps> = ({
     <Background
       source={{ uri: imgUrl }}
       imageStyle={{
-        borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
+        borderBottomLeftRadius: 25,
+        borderBottomRightRadius: 25,
       }}
     >
       <Section>
