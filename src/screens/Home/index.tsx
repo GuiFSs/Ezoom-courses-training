@@ -14,7 +14,7 @@ const Home: React.FC<StackScreenProps<any, any>> = ({ navigation }) => {
   return (
     <SafeArea>
       <Header
-        imgUrl="https://multiversomais.com/wp-content/uploads/2020/04/valorantcyph-gs.jpg"
+        imgUrl="https://jeonline.com.br/site/uploads/posts/20-de-dezembro-e-comemorado-o-dia-do-mecanico-5497fef78b4b42b3ce1d80e2eaec919a.jpg"
         title="cursos e treinamentos"
         subtitle="Selecione o curso ou treinamento que deseja."
       />
