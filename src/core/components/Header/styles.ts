@@ -24,6 +24,7 @@ export const Section = styled.View`
 export const TopIcons = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const Gearing = styled.Image`
