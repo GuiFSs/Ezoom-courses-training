@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { StatusBar } from 'react-native';
+import { StatusBar, TouchableOpacity } from 'react-native';
+import { StackNavigationProp } from '@react-navigation/stack';
 import {
-  Container, Background, Section, TopIcons, Gearing, Bars, CenterView, Title, Subtitle,
+  Container, Background, Section, TopIcons, Gearing, Bars, CenterView, Title, Subtitle, BackIcon,
 } from './styles';
 import { images } from '~/assets';
 
@@ -10,9 +11,12 @@ interface IProps {
   imgUrl: string
   title: string
   subtitle?: string
+  navigation?:StackNavigationProp<any, string>
 }
 
-const Header: React.FC<IProps> = ({ imgUrl, title, subtitle }) => (
+const Header: React.FC<IProps> = ({
+  imgUrl, title, subtitle, navigation,
+}) => (
   <Container>
     <StatusBar barStyle="light-content" backgroundColor="#000" />
     <Background
@@ -32,6 +36,15 @@ const Header: React.FC<IProps> = ({ imgUrl, title, subtitle }) => (
           />
         </TopIcons>
         <CenterView>
+          {navigation && (
+            <TouchableOpacity
+              onPress={() => navigation.goBack()}
+            >
+              <BackIcon
+                name="chevron-with-circle-left"
+              />
+            </TouchableOpacity>
+          )}
           <Title>
             {title}
           </Title>

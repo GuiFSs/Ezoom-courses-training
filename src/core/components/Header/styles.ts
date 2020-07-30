@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import FAIcon from 'react-native-vector-icons/FontAwesome5';
+import EntypoIcon from 'react-native-vector-icons/Entypo';
+
 import Text from '~/core/components/Text';
 
 export const Container = styled.View`
@@ -32,7 +34,7 @@ export const Gearing = styled.Image`
   height: ${RFValue(40)}px;
 `;
 
-export const Bars = styled(Icon)`
+export const Bars = styled(FAIcon)`
   font-size: ${RFValue(30)}px;
   color: #FFF;
 `;
@@ -41,7 +43,12 @@ export const CenterView = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+`;
+
+export const BackIcon = styled(EntypoIcon)`
+  font-size: ${RFValue(33)}px;
+  color: #FFF;
+  margin: 10px 0px;
 `;
 
 export const Title = styled(Text)`
