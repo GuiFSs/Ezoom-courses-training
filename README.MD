@@ -3,7 +3,7 @@
 ### Como rodar o app
 
 1. `yarn` ou `npm install` na pasta do projeto para instalar as libs
-2. `yarn android` para rodar o app
+2. `yarn android` ou `npm run android` para rodar o app
 
 **OBS: O app nao foi testado no IOS**
 
