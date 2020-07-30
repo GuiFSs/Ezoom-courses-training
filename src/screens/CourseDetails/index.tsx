@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { StackScreenProps } from '@react-navigation/stack';
-import { ScrollView } from 'react-native';
+import { ScrollView, FlatList } from 'react-native';
 import SafeArea from '~/core/components/SafeArea';
 import Header from '~/core/components/Header';
 import { ICourse } from '~/core/interfaces/Course';
@@ -33,12 +33,16 @@ const CourseDetails: React.FC<StackScreenProps<Record<string, IParams>, any>> = 
               {details}
             </Description>
             <ImagesView>
-              {images.map((image, i) => (
-                <CourseImage
-                  key={i.toString()}
-                  source={{ uri: image }}
-                />
-              ))}
+              <FlatList
+                data={images}
+                keyExtractor={(_, i) => `course-image-${i}`}
+                numColumns={2}
+                renderItem={({ item: image }) => (
+                  <CourseImage
+                    source={{ uri: image }}
+                  />
+                )}
+              />
             </ImagesView>
           </ScrollView>
         </SectionWrapper>

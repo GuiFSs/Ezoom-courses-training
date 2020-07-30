@@ -6,7 +6,7 @@ const SectionWrapper = styled.View`
   align-self: center;
   background-color: #FFF;
   margin-top: 40px;
-  padding: 20px 15px;
+  padding: 20px 15px 0px 15px;
 `;
 
 export default SectionWrapper;
