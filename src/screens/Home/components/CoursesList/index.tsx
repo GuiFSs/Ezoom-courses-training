@@ -11,6 +11,7 @@ interface IProps {
 const CoursesList: React.FC<IProps> = ({ courses, onPressCourse }) => {
   function renderItem({ item }:ListRenderItemInfo<ICourse>) {
     const { coverImage, title } = item;
+    console.log(JSON.stringify(courses, null, 1));
     return (
       <CourseItem
         imageUrl={coverImage}

@@ -1,0 +1,41 @@
+[{
+    "id": "1",
+    "title": "Curso número um para montagem",
+    "details": "lorem",
+    "coverImage": "https://news.files.bbci.co.uk/vj/live/idt-images/image-slider-ClassicCars/1_rkj3f.jpg",
+    "images": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Curso número um para montagem",
+    "details": "lorem",
+    "coverImage": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/57bf3f070e2163719704fc06qr-679-toro-03-tif.jpeg?quality=70&strip=all&strip=all",
+    "images": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Curso número um para montagem",
+    "details": "lorem",
+    "coverImage": "https://media.drivrzone.com/wp-content/uploads/2018/01/driving-an-old-car.jpg",
+    "images": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Curso número um para montagem",
+    "details": "lorem",
+    "coverImage": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/57bf3f070e2163719704fc06qr-679-toro-03-tif.jpeg?quality=70&strip=all&strip=all",
+    "images": [
+      "",
+      ""
+    ]
+  }
+]

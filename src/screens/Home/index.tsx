@@ -5,6 +5,7 @@ import CoursesList from './components/CoursesList';
 import SectionWrapper from '~/core/components/SectionWrapper';
 import SafeArea from '~/core/components/SafeArea';
 import { ICourse } from '~/core/interfaces/Course';
+import courses from '~/services/courses.json';
 
 const Home: React.FC<StackScreenProps<any, any>> = ({ navigation }) => {
   function onPressCourse(course:ICourse) {
@@ -20,18 +21,7 @@ const Home: React.FC<StackScreenProps<any, any>> = ({ navigation }) => {
       <SectionWrapper>
         <CoursesList
           onPressCourse={onPressCourse}
-          courses={[
-            {
-              id: '1',
-              title: 'Curso número um para montagem',
-              coverImage: 'https://multiversomais.com/wp-content/uploads/2020/04/valorantcyph-gs.jpg',
-            },
-            {
-              id: '2',
-              title: 'Curso número um para montagem',
-              coverImage: 'https://multiversomais.com/wp-content/uploads/2020/04/valorantcyph-gs.jpg',
-            },
-          ]}
+          courses={courses}
         />
       </SectionWrapper>
     </SafeArea>
