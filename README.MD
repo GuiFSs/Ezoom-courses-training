@@ -9,4 +9,4 @@
 
 ### Prints do app
 
-![image](https://user-images.githubusercontent.com/37676399/88974839-a0506100-d28f-11ea-8084-c1f4cbfb3e72.png) ![CourseDetails](https://user-images.githubusercontent.com/37676399/88975158-1e146c80-d290-11ea-933e-f3215e923984.png)
+![image](https://user-images.githubusercontent.com/37676399/88977833-f1168880-d294-11ea-9ff8-aa6cebecf347.png) ![CourseDetails](https://user-images.githubusercontent.com/37676399/88977660-b876af00-d294-11ea-81c9-bffc7d57f0f0.png)
