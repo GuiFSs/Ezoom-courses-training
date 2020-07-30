@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { StatusBar } from 'react-native';
 import {
   Container, Background, Section, TopIcons, Gearing, Bars, CenterView, Title, Subtitle,
 } from './styles';
@@ -13,6 +14,7 @@ interface IProps {
 
 const Header: React.FC<IProps> = ({ imgUrl, title, subtitle }) => (
   <Container>
+    <StatusBar barStyle="light-content" backgroundColor="#000" />
     <Background
       source={{ uri: imgUrl }}
       imageStyle={{
